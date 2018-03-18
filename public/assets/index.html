@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Drudge Report Scrape</title>
+</head>
+
+<body>
+  <div class="row">
+    <div class="col s12">
+      <h2 class="center-align">Get the Latest from DrudgeReport!</h2>
+    </div>
+  </div>
+  <div class="container">
+    <!-- MENU ROW -->
+    <div class="row">
+
+      <div class="col s3">
+        <a class='dropdown-button btn btn-large amber'>Scrape articles</a>         
+      </div>
+
+
+      <div class=" col s3 ">
+        <a class='dropdown-button btn btn-large green' href='#' data-activates='css2'>Comment</a>
+         
+      </div>     
+       
+    </div>
+    
+    <br>
+    <br>
+
+    <!-- START HERE -->
+
+    <div class="row">
+      <div id="results-area" class="col s12 m8 l8">
+         <h1>Hello</h1>
+      </div>
+
+      <!-- <div id="comments-area" class="col s12 m4 l4">
+         <h1>I have something to say!</h1>
+      </div> -->
+       
+    </div>
+
+     
+
+  </div>
+  <!-- ./ CONTAINER END -->
+
+
+
+  <!--Import jQuery before materialize.js-->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+
+  <script>
+    $(document).ready(function () {
+      $('.dropdown-button').dropdown({
+        constrainWidth: false,
+        hover: true,
+        belowOrigin: true,
+        alignment: 'left'
+      });
+
+      // JAVASCRIPT START HERE //
+      $('.slider').slider();
+
+
+
+    });
+  </script>
+</body>
+
+</html>
