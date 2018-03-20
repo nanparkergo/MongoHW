@@ -2,10 +2,13 @@ var cheerio = require("cheerio");
 var request = require("request");
 var express = require("express");
 var mongojs = require("mongojs");
+var path = require("path");
 
 // Initialize Express
 var app = express();
 
+// Set up a static folder (public) for our web app
+app.use(express.static("public"));
 // Database configuration
 var databaseUrl = "scraper";
 var collections = ["scrapedData"];
@@ -29,6 +32,10 @@ app.get("/all", function(req, res) {
     }
     else {
       res.json(found);
+      console.log("I'm here!!");
+      for (i=0; i<found.length; i++) {
+        console.log("counting ...");
+      }
     }
   });
 })
